@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>People</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+    <script >
+    
+    function toggle (element)
+    {
+    if ($(element).children(":first").hasClass("plus"))
+        {
+        $(element).empty();
+        $(element).append(' <img class = "ok"  src="img/ok.png" >  <span  class="btn btn-danger badge unfollow">Unfollow </span>');
+        }
+    else
+        {
+        $(element).empty();
+        $(element).append(' <img class = "plus"  src="img/plus.png" >   <span  class="btn  btn-success badge follow">Follow</span> ');
+        }
+    }
+    </script>
+
+
+<div class = "people"><img src = "img/people.png"></div>
+
+
+<div class = "panel panel-default ">
+
+    <div class="panel-heading">
+          <div class="row">
+              <div class = "col-xs-6 panel-title"></div>
+              <div class = "col-xs-2 panel-title"> Ideas </div>
+              <div class = "col-xs-2 panel-title"> Following </div>
+              <div class = "col-xs-2 panel-title"> Followers </div>
+          </div>
+    </div>
+    
+    <table class="panel-body table table-striped ">
+        <tbody>
+ 
+        <tr>
+          <td class = "col-md-6">
+              <div class = "first-column">
+                <div class = "panel panel-default ">
+                    <div class="panel-body">
+                        <img   src="img/john-adams.jpg" >
+                    </div>
+                </div >         
+             </div>
+
+             <div class = "second-column">
+                <div class = "div2">John Adams</div>
+
+                <div class="cell div3" onclick='toggle(this)' >
+                    <img class = "plus"  src="img/plus.png" >
+                    <span  class="btn btn-success badge follow">Follow</span>                         
+                </div>
+
+                <div class = "div4"> <img class = "chart" src="img/chart.png" alt="chart">102</div>
+            </div>
+          </td>
+          <td class = "col-md-2">0</td>
+          <td class = "col-md-2">50</td>
+          <td class = "col-md-2">0</td>
+        </tr>
+
+        <tr>
+            <td class = "col-md-6">
+                <div class = "first-column">
+                  <div class = "panel panel-default ">
+                      <div class="panel-body">
+                          <img   src="img/kevin-malcolm.jpg" >
+                      </div>
+                  </div >         
+               </div>
+  
+               <div class = "second-column">
+                  <div class = "div2">Kevin Malcolm</div>
+  
+                  <div class="cell div3" onclick='toggle(this)' >
+                      <img class = "plus"  src="img/plus.png" >
+                      <span  class="btn btn-success badge follow">Follow</span>                         
+                  </div>
+  
+                  <div class = "div4"> <img class = "chart" src="img/chart.png" alt="chart">1472</div>
+              </div>
+            </td>
+            <td class = "col-md-2">20</td>
+            <td class = "col-md-2">19</td>
+            <td class = "col-md-2">26</td>
+          </tr>
+
+        <tr>
+            <td class = "col-md-6">
+                <div class = "first-column">
+                  <div class = "panel panel-default ">
+                      <div class="panel-body">
+                          <img   src="img/james-madison.jpg" >
+                      </div>
+                  </div >         
+               </div>
+  
+               <div class = "second-column">
+                  <div class = "div2">James Madison</div>
+  
+                  <div class="cell div3" onclick='toggle(this)' >
+                      <img class = "plus"  src="img/plus.png" >
+                      <span  class="btn btn-success badge follow">Follow</span>                         
+                  </div>
+  
+                  <div class = "div4"> <img class = "chart" src="img/chart.png" alt="chart">32</div>
+              </div>
+            </td>
+            <td class = "col-md-2">0</td>
+            <td class = "col-md-2">2</td>
+            <td class = "col-md-2">0</td>
+        </tr>
+        <tr>
+            <td class = "col-md-6">
+                <div class = "first-column">
+                  <div class = "panel panel-default ">
+                      <div class="panel-body">
+                          <img   src="img/james-monroe.jpg" >
+                      </div>
+                  </div >         
+               </div>
+  
+               <div class = "second-column">
+                  <div class = "div2">James Monroe</div>
+  
+                  <div class="cell div3" onclick='toggle(this)' >
+                    <img class = "ok"  src="img/ok.png" > 
+                    <span  class="btn btn-danger badge unfollow"  >Unfollow </span>                         
+                  </div>
+  
+                  <div class = "div4"> <img class = "chart" src="img/chart.png" alt="chart">3086</div>
+              </div>
+            </td>
+            <td class = "col-md-2">53</td>
+            <td class = "col-md-2">1059</td>
+            <td class = "col-md-2" >45</td>
+        </tr>
+        <tr >
+            <td class = "col-md-6">
+                <div class = "first-column">
+                  <div class = "panel panel-default ">
+                      <div class="panel-body">
+                          <img   src="img/nofoto.jpg" >
+                      </div>
+                  </div >         
+               </div>
+  
+               <div class = "second-column">
+                  <div class = "div2">Andrew Jackson</div>
+  
+                  <div class="cell div3" onclick='toggle(this)' >
+                      <img class = "plus"  src="img/plus.png" >
+                      <span  class="btn btn-success badge follow">Follow</span>                         
+                  </div>
+  
+                  <div class = "div4"> <img class = "chart" src="img/chart.png" alt="chart">102</div>
+              </div>
+            </td>
+            <td class = "col-md-2">0</td>
+            <td class = "col-md-2">50</td>
+            <td class = "col-md-2" >0</td>
+        </tr>
+
+        <tr>
+            <td class = "col-md-6">
+                <div class = "first-column">
+                  <div class = "panel panel-default ">
+                      <div class="panel-body">
+                          <img   src="img/john-adams.jpg" >
+                      </div>
+                  </div >         
+               </div>
+  
+               <div class = "second-column">
+                  <div class = "div2">John Adams</div>
+  
+                  <div class="cell div3" onclick='toggle(this)' >
+                      <img class = "plus"  src="img/plus.png" >
+                      <span  class="btn btn-success badge follow">Follow</span>                         
+                  </div>
+  
+                  <div class = "div4"> <img class = "chart" src="img/chart.png" alt="chart">102</div>
+              </div>
+            </td>
+            <td class = "col-md-2">0</td>
+            <td class = "col-md-2">50</td>
+            <td class = "col-md-2">0</td>
+          </tr>
+  
+          <tr>
+              <td class = "col-md-6">
+                  <div class = "first-column">
+                    <div class = "panel panel-default ">
+                        <div class="panel-body">
+                            <img   src="img/kevin-malcolm.jpg" >
+                        </div>
+                    </div >         
+                 </div>
+    
+                 <div class = "second-column">
+                    <div class = "div2">Kevin Malcolm</div>
+    
+                    <div class="cell div3" onclick='toggle(this)' >
+                        <img class = "plus"  src="img/plus.png" >
+                        <span  class="btn btn-success badge follow">Follow</span>                         
+                    </div>
+    
+                    <div class = "div4"> <img class = "chart" src="img/chart.png" alt="chart">1472</div>
+                </div>
+              </td>
+              <td class = "col-md-2">20</td>
+              <td class = "col-md-2">19</td>
+              <td class = "col-md-2">26</td>
+            </tr>
+  
+          <tr>
+              <td class = "col-md-6">
+                  <div class = "first-column">
+                    <div class = "panel panel-default ">
+                        <div class="panel-body">
+                            <img   src="img/james-madison.jpg" >
+                        </div>
+                    </div >         
+                 </div>
+    
+                 <div class = "second-column">
+                    <div class = "div2">James Madison</div>
+    
+                    <div class="cell div3" onclick='toggle(this)' >
+                        <img class = "plus"  src="img/plus.png" >
+                        <span  class="btn btn-success badge follow">Follow</span>                         
+                    </div>
+    
+                    <div class = "div4"> <img class = "chart" src="img/chart.png" alt="chart">32</div>
+                </div>
+              </td>
+              <td class = "col-md-2">0</td>
+              <td class = "col-md-2">2</td>
+              <td class = "col-md-2">0</td>
+          </tr>
+          <tr>
+              <td class = "col-md-6">
+                  <div class = "first-column">
+                    <div class = "panel panel-default ">
+                        <div class="panel-body">
+                            <img   src="img/james-monroe.jpg" >
+                        </div>
+                    </div >         
+                 </div>
+    
+                 <div class = "second-column">
+                    <div class = "div2">James Monroe</div>
+    
+                    <div class="cell div3" onclick='toggle(this)' >
+                      <img class = "ok"  src="img/ok.png" > 
+                      <span  class="btn btn-danger badge unfollow"  >Unfollow </span>                         
+                    </div>
+    
+                    <div class = "div4"> <img class = "chart" src="img/chart.png" alt="chart">3086</div>
+                </div>
+              </td>
+              <td class = "col-md-2">53</td>
+              <td class = "col-md-2">1059</td>
+              <td class = "col-md-2" >45</td>
+          </tr>
+          <tr >
+              <td class = "col-md-6">
+                  <div class = "first-column">
+                    <div class = "panel panel-default ">
+                        <div class="panel-body">
+                            <img   src="img/nofoto.jpg" >
+                        </div>
+                    </div >         
+                 </div>
+    
+                 <div class = "second-column">
+                    <div class = "div2">Andrew Jackson</div>
+    
+                    <div class="cell div3" onclick='toggle(this)' >
+                        <img class = "plus"  src="img/plus.png" >
+                        <span  class="btn btn-success badge follow">Follow</span>                         
+                    </div>
+    
+                    <div class = "div4"> <img class = "chart" src="img/chart.png" alt="chart">102</div>
+                </div>
+              </td>
+              <td class = "col-md-2">0</td>
+              <td class = "col-md-2">50</td>
+              <td class = "col-md-2" >0</td>
+          </tr>
+
+          <tr>
+            <td class = "col-md-6">
+                <div class = "first-column">
+                  <div class = "panel panel-default ">
+                      <div class="panel-body">
+                          <img   src="img/john-adams.jpg" >
+                      </div>
+                  </div >         
+               </div>
+  
+               <div class = "second-column">
+                  <div class = "div2">John Adams</div>
+  
+                  <div class="cell div3" onclick='toggle(this)' >
+                      <img class = "plus"  src="img/plus.png" >
+                      <span  class="btn btn-success badge follow">Follow</span>                         
+                  </div>
+  
+                  <div class = "div4"> <img class = "chart" src="img/chart.png" alt="chart">102</div>
+              </div>
+            </td>
+            <td class = "col-md-2">0</td>
+            <td class = "col-md-2">50</td>
+            <td class = "col-md-2">0</td>
+          </tr>
+
+      </tbody>
+
+    </table>
+</div>
+
+  <a href="http://www.yandex.ru">
+  <div class = "show-more">SHOW MORE</div>
+  </a>
+
+
+  </body>
+</html>
